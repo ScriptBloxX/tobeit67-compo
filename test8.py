@@ -17,8 +17,9 @@ while True:
         ftime = False
     elif n=='s':
         print(f"{Sensitivity:.2f}?")
+        OldMinimum = Minimum
         Minimum = Sensitivity
-        Maximum = Maximum - (Maximum-Minimum)/2
+        Maximum = Maximum - (Maximum-OldMinimum)/2
         Sensitivity = Maximum
     elif n=='f':
         oldMaximum = Maximum
