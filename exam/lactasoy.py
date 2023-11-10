@@ -18,5 +18,7 @@ else:
         soy_price-=a
     soy_price += discount
 
-# print(soy_price,discount,a*d)
+    if d%b == 0:
+        soy_price+=2
+        
 print(soy_price)
